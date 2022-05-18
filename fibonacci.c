@@ -1,15 +1,23 @@
-#include<stdio.h>    
-int main()    
-{    
- int n1=0,n2=1,n3,i,number;    
- scanf("%d",&number);    
- printf("%d %d",n1,n2);    
- for(i=2;i<number;++i)    
- {    
-  n3=n1+n2;    
-  printf(" %d",n3);    
-  n1=n2;    
-  n2=n3;    
- }  
-  return 0;  
- }
+#include<stdio.h>
+int fib(int);
+int main()
+{
+	int n,i,res;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		res=fib(i);
+		printf("%d ",res);
+	}
+	return 0;
+}
+int fib(int x)
+{
+	if(x==1)
+	return 0;
+	else if(x==2)
+	return 1;
+	else
+	return fib(x-1)+fib(x-2);  
+	
+}
