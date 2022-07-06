@@ -48,6 +48,6 @@ int main()
 ",min);
         else
         printf("%d
-",max);   
+",max);
     }
 }
