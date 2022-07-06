@@ -33,13 +33,11 @@ int main()
         if(dig==pr)
         {
             printf("Mega Prime");
-        }
-        else
-        {
+        }else{
             printf("Not Mega Prime");
         }
     }else{
-            printf("Not Mega Prime");
+        printf("Not Mega Prime");
     }
     return 0;
 }
