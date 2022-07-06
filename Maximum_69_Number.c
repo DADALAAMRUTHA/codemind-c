@@ -1,6 +1,5 @@
-#include<stdio.h>
 #include<string.h>
-#include<math.h>
+#include<stdio.h>
 int main()
 {
     char s[100];
@@ -18,4 +17,3 @@ int main()
     printf("%s",s);
     return 0;
 }
- 
