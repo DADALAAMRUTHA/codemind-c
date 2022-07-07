@@ -17,8 +17,8 @@ int main()
         }
         if(i==rev)
         {
-            next=i;
-            break;
+         next=i;
+         break;
         }
         i++;
     }
@@ -34,18 +34,20 @@ int main()
         }
         if(j==rev)
         {
-            prev=j;
-            break;
+         prev=j;
+         break;
         }
         j--;
     }
     if(next-n==n-prev)
     {
         printf("%d %d",prev,next);
-    }else if(next-n>n-prev)
+    }
+    else if(next-n>n-prev)
     {
         printf("%d",prev);
-    }else{
+    }else
+    {
         printf("%d",next);
     }
     return 0;
