@@ -1,27 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int a[100][100],n,m,sum=0,sum1=0;
-    scanf("%d%d",&n,&m);
+    int n,m,a[100][100],b[100][100],c[100][100],j,s=0,s1=0;
+    scanf("%d %d",&n,&m);
     for(int i=0;i<n;i++)
-    {
+    {  
         for(int j=0;j<m;j++)
         {
             scanf("%d",&a[i][j]);
         }
     }
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<m;j++)
+   
+    for(int j=0;j<m;j++)
+    {  
+        for(int i=0;i<n;i++)
         {
             if(i%2==0)
-            sum=sum+a[i][j];
+            s=s+a[i][j];
             else
-            sum1+=a[i][j];
-            
+            s1=s1+a[i][j];
         }
     }
-    printf("%d ",sum);
-    printf("%d",sum1);
-
+    printf("%d %d",s,s1);
 }
