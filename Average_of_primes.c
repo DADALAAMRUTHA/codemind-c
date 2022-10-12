@@ -10,7 +10,6 @@ int main()
         f=0;
         for(j=1;j<=a[i];j++)
         {
-            
             if(a[i]%j==0)
             {
                 f++;
@@ -24,5 +23,4 @@ int main()
     }
     avg=sum/c;
     printf("%.2f",avg);
-   
 }
